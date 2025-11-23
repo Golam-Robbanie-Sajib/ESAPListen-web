@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Dark green circle background -->
+  <circle cx="50" cy="50" r="48" fill="#166534" stroke="#14532d" stroke-width="2"/>
+
+  <!-- Headphones icon in light green -->
+  <g fill="#86efac" stroke="#86efac" stroke-width="2">
+    <!-- Left ear cup -->
+    <rect x="20" y="40" width="12" height="20" rx="4"/>
+    <!-- Right ear cup -->
+    <rect x="68" y="40" width="12" height="20" rx="4"/>
+    <!-- Headband -->
+    <path d="M 26,40 Q 50,20 74,40" fill="none" stroke-width="3" stroke-linecap="round"/>
+    <!-- Left wire -->
+    <line x1="26" y1="60" x2="26" y2="70" stroke-width="2"/>
+    <!-- Right wire -->
+    <line x1="74" y1="60" x2="74" y2="70" stroke-width="2"/>
+  </g>
+
+  <!-- Sound waves in lighter green -->
+  <g fill="none" stroke="#bbf7d0" stroke-width="2" opacity="0.7">
+    <path d="M 85,50 Q 88,50 90,50"/>
+    <path d="M 85,45 Q 90,45 92,45"/>
+    <path d="M 85,55 Q 90,55 92,55"/>
+    <path d="M 15,50 Q 12,50 10,50"/>
+    <path d="M 15,45 Q 10,45 8,45"/>
+    <path d="M 15,55 Q 10,55 8,55"/>
+  </g>
+</svg>

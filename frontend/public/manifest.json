@@ -1,0 +1,65 @@
+{
+  "name": "ESAPListen - AI Meeting Analysis",
+  "short_name": "ESAPListen",
+  "description": "Transform meetings into actionable insights with AI-powered analysis",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#10b981",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/esapai_logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/esapai_logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "business", "education"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "Go to dashboard",
+      "url": "/dashboard",
+      "icons": [
+        {
+          "src": "/esapai_logo.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Upload Audio",
+      "short_name": "Upload",
+      "description": "Upload a new meeting recording",
+      "url": "/dashboard",
+      "icons": [
+        {
+          "src": "/esapai_logo.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/dashboard",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "files": [
+        {
+          "name": "audio",
+          "accept": ["audio/*"]
+        }
+      ]
+    }
+  }
+}

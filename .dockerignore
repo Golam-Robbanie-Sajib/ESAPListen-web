@@ -1,0 +1,38 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets (from your .gitignore)
+.env
+service_account.json
+
+# Build/Run artifacts
+*.db
+*.log
+uploads/
+
+# Git & Docker
+.git
+.gitignore
+.dockerignore
+
+# Local IDE
+.idea/
+.vscode/
+.DS_Store
+
+# Unnecessary media/models (from your .gitignore)
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.onnx
+*.ckpt
+*.safetensors
+*.gguf
+
+# Documentation
+README.md
+devops-learning-guide-windows.md

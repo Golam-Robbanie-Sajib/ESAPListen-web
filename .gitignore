@@ -1,0 +1,59 @@
+# Python virtual environment
+venv/
+/venv/
+__pycache__/
+
+# Environment variables
+.env
+
+# Secrets
+service_account.json
+
+# Temporary uploads and logs
+uploads/
+*.log
+
+# IDE and OS specific files
+.idea/
+.vscode/
+*.DS_Store
+
+# Media and Test Data
+*.mp3
+*.wav
+*.m4a
+*.flac
+
+*.db
+
+# Ignore service account JSON and config files, but allow package.json and tsconfig.json
+service_account*.json
+credentials*.json
+config*.json
+
+*.onnx
+
+*.ckpt
+
+*.yaml
+
+*.jinja
+
+*.safetensors
+*.gguf
+models/qwen3-1.7b-hf/merges.txt
+
+# Terraform-specific files
+**/.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Next.js frontend
+frontend/.next/
+frontend/node_modules/
+frontend/next-env.d.ts
+frontend/package-lock.json
+frontend/out/
+frontend/.next/
+.next/
+node_modules/
