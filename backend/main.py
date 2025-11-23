@@ -1471,8 +1471,8 @@ async def get_analytics(
             avg_processing_time = sum(m.processing_time for m in meetings_with_processing_time) / len(meetings_with_processing_time)
 
         # Get meetings by date (last 30 days)
-        from datetime import datetime, timedelta
-        thirty_days_ago = datetime.now() - timedelta(days=30)
+        from datetime import datetime, timedelta, timezone
+        thirty_days_ago = datetime.now(timezone.utc) - timedelta(days=30)
         recent_meetings = [m for m in meetings if m.created_at >= thirty_days_ago]
 
         # Calendar sync stats

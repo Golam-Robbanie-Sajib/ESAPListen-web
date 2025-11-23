@@ -41,7 +41,10 @@ class GoogleCalendarOAuth:
 
         # Set expiry
         if token_expiry:
-            self.credentials.expiry = token_expiry
+            if token_expiry.tzinfo is not None:
+                self.credentials.expiry = token_expiry.replace(tzinfo=None)
+            else:
+                self.credentials.expiry = token_expiry
 
         # Refresh token if expired
         if self.credentials.expired and self.credentials.refresh_token:
