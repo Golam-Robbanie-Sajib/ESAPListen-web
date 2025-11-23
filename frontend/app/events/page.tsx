@@ -48,7 +48,7 @@ interface Event {
   isManual?: boolean;
   notificationsEnabled?: boolean;
   completed?: boolean;
-  urgency?: 'yes' | 'no';
+  urgency?: 'yes' | 'no'| 'high' | 'medium' | 'low';
 }
 
 export default function EventsPage() {

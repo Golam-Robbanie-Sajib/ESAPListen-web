@@ -30,7 +30,7 @@ interface Task {
   type: string;
   category?: string;
   meetingId: string;
-  urgency?: 'yes' | 'no';
+  urgency?: 'yes' | 'no'| 'high' | 'medium' | 'low';
 }
 
 export default function TasksPage() {

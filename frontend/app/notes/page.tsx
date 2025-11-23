@@ -24,7 +24,7 @@ interface Note {
   meetingTitle?: string;
   type?: string;
   completed?: boolean;
-  urgency?: 'yes' | 'no';
+  urgency?: 'yes' | 'no'| 'high' | 'medium' | 'low';
 }
 
 export default function NotesPage() {
