@@ -66,6 +66,7 @@ export interface CalendarEvent {
   calendarEventId?: string;
   isManual?: boolean;
   completed?: boolean;
+  urgency?: 'yes' | 'no' | 'high' | 'medium' | 'low';
 }
 
 // User types
