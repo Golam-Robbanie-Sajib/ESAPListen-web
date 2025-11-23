@@ -20,7 +20,7 @@ soundfile==0.13.1
 mutagen==1.47.0
 
 # Audio Enhancement (Pedalboard DRC - Dynamic Range Compression)
-pedalboard==0.9.9
+pedalboard==0.9.19
 
 # Transcription API (AssemblyAI does transcription + diarization)
 assemblyai==0.36.0
