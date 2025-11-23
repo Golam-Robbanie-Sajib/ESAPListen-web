@@ -7,6 +7,7 @@ import { authAPI } from '@/lib/api';
 import { useToast } from '@/components/Toast';
 import { useAuth } from '@/lib/auth-context';
 import { Loader2, CheckCircle2, AlertCircle, Mail } from 'lucide-react';
+export const dynamic = 'force-dynamic';
 
 export default function VerifyEmailPage() {
   const router = useRouter();

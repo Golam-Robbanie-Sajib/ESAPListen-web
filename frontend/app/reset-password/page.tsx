@@ -7,6 +7,8 @@ import { authAPI } from '@/lib/api';
 import { useToast } from '@/components/Toast';
 import { Loader2, Lock, AlertCircle, CheckCircle2, XCircle, Eye, EyeOff } from 'lucide-react';
 
+export const dynamic = 'force-dynamic';
+
 export default function ResetPasswordPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
