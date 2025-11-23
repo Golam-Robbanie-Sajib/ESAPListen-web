@@ -63,7 +63,7 @@ export default function DashboardPage() {
                 ? JSON.parse(eventItem.event_data)
                 : eventItem.event_data;
 
-              if (eventItem.event_type === 'dated_events' && eventData.synced) {
+              if (eventItem.event_type === 'dated_events') {
                 const eventDate = new Date(eventData.date);
                 if (eventDate > now) {
                   allEvents.push({
